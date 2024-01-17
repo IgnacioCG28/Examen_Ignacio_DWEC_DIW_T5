@@ -3,10 +3,12 @@
     src: url("/Assets/fonts/Montserrat-Regular.ttf");
   }
   :root {
-    --input-size: 20.75rem;
+    --input-size: 15rem;
     --height-hero-image: 90vh;
     --bg-color1: #2f2f2f;
     --bg-color2: #ffff;
+    --purple-color1: #6a0dad;
+    --purple-color2:#800080;
   }
   
   html {
@@ -35,8 +37,9 @@
   }
   
   .hero-container {
-    background: url(/assets/img/air.jpg) center/cover;
+    background: url(/Assets/img/air.jpg) center/cover;
     height: var(--height-hero-image);
+    clip-path: circle();
     position: relative;
   }
   
@@ -46,7 +49,7 @@
     position: absolute;
     width: 500rem;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0;
   }
   
   .hero-body {
@@ -100,29 +103,85 @@
     }
   }
 
-  /*Form Style*/
-
-  .main.container-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  form{
-    width: 25rem ;
-    background-color: #700ea8;
+/*Form style*/
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--purple-color1);
+    width: 30rem;
+    height: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(247, 247, 247, 0.5);
+  }
+  
+  .main-container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  input {
+    width: var(--input-size);
+    height: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--purple-color2);
+    color: white;
+    border: none;
+    cursor: pointer;
   }
 
-  input[type="submit"]{
-    background-color: var(--bg-color1);
+  input[type="button"]:hover{
+    background-color: var(--purple-color2);
+    border: none;
+    cursor: pointer;
+    color: white;
   }
 
-  input{
-background-color: var(--bg-color1);
-color: white;
+  input[type="text"], input[type="email"]{
+    padding-left: 2rem;
   }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  button {
+    width: var(--input-size);
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--purple-color1);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--purple-color2);
+  }
+  textarea {
+    width: var(--input-size);
+    height: 5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  /*Media Query*/
+
+  
 
   
