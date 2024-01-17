@@ -39,7 +39,7 @@
   .hero-container {
     background: url(/Assets/img/air.jpg) center/cover;
     height: var(--height-hero-image);
-    clip-path: circle();
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
     position: relative;
   }
   
@@ -199,7 +199,7 @@ form {
     }
     form {
       width: 20rem;
-      height: 20rem;
+      height: relative;
     }
     input {
       width: var(--input-size);
@@ -210,6 +210,10 @@ form {
     textarea {
       width: var(--input-size);
     }
+    .colorW {
+        color: red;
+        font-size: 0.8rem;
+      }
   }
   
   @media screen and (max-width: 576px) {
@@ -234,7 +238,7 @@ form {
       width: var(--input-size);
     }
     textarea {
-      width: 100%;
+        width: var(--input-size);
     }
   }
   

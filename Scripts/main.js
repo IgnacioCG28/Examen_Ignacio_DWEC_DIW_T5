@@ -53,12 +53,6 @@ const validar = (event) => {
   }
 };
 
-radioSend = () => {
-  if (radioCorpo.check === true) {
-    alert("infoCorpo");
-  } else if (radioRuta === true) {
-    alert("Pillar avion");
-  }
-};
+
 
 formulario.addEventListener("submit", validar);
