@@ -141,6 +141,11 @@ form {
     cursor: pointer;
   }
 
+  input[type="radio"]{
+    width: 1.5rem;
+    cursor: pointer;
+  }
+
   input[type="button"]:hover{
     background-color: var(--purple-color2);
     border: none;
@@ -182,6 +187,6 @@ form {
 
   /*Media Query*/
 
-  
+
 
   

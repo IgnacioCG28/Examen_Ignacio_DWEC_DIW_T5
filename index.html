@@ -21,15 +21,17 @@
     <div class="main-container-form">
       <form id="formulario" action="succes.html" method="get">
           <h2>Contacto C.Corp</h2>
-          <input type="text" name="nombre" id="nombre" placeholder="Name" class="name">
-          <input type="email" name="correo" id="correo" placeholder="Email" class="email">
+          <input type="text" name="nombre" id="nombre" placeholder="Name">
+          <input type="email" name="correo" id="correo" placeholder="Email">
+          <span>Solicitud de información</span>
           <input type="radio" name="radioInfo" id="radioInfo">
+          <span>Reserva de avión</span>
           <input type="radio" name="radioInfo" id="radioInfo">
-          <input type="button" value="radioSend">
+          <input type="button" value="Info" id="radioSend" name="radioSend">
           <textarea class="message" name="mensaje" id="mensaje" cols="30" rows="4"
               placeholder="Write a message."></textarea>
-          <input type="submit" name="enviar" id="enviar" class="btn" value="SEND">
-          <ul class="errores" id="errores"></ul>
+          <input type="submit" name="enviar" id="enviar" value="SEND">
+          <ul  id="errores"></ul>
       </form>
   </div>
     <script src="/Scripts/main.js"></script>
