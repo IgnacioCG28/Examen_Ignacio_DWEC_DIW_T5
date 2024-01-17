@@ -49,7 +49,7 @@
     position: absolute;
     width: 500rem;
     height: 100%;
-    opacity: 0;
+    opacity: 0.8;
   }
   
   .hero-body {
@@ -185,8 +185,58 @@ form {
     padding-left: 1rem;
   }
 
-  /*Media Query*/
+  /*Responsive style*/
 
-
-
+@media screen and (max-width: 768px) {
+    :root {
+      --input-size: 15rem;
+    }
+    .hero-container {
+      height: var(--height-hero-image);
+    }
+    .hero-container::before {
+      width: 500rem;
+    }
+    form {
+      width: 20rem;
+      height: 20rem;
+    }
+    input {
+      width: var(--input-size);
+    }
+    button {
+      width: var(--input-size);
+    }
+    textarea {
+      width: var(--input-size);
+    }
+  }
   
+  @media screen and (max-width: 576px) {
+    :root {
+        --input-size: 10rem;
+      }
+    .hero-container {
+      height: var(--height-hero-image);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .hero-container::before {
+      width: 500rem;
+    }
+    form {
+      width: 20rem;
+      height: 100% relative;
+    }
+    input {
+      width: var(--input-size);
+    }
+    button {
+      width: var(--input-size);
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+  
+  
+ 
