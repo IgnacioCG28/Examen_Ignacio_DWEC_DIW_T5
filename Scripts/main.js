@@ -1,7 +1,7 @@
 /**
  * @author Nacho Carmona Gonzalez;
  * @github https://github.com/IgnacioCG28/Examen_Ignacio_DWEC_DIW_T5.git
- * @version 0.8
+ * @version 1.0
  * @description: ExamenT5
  */
 
@@ -55,5 +55,17 @@ const validar = (event) => {
     });
   }
 };
+
+/* Intento radio
+const validarRadio = () => {
+    if (radioInfo.checked) {
+      alert("¿Dudas sobre Corpo?");
+    } else if (radioRuta.checked) {
+      alert("Avion reservado.");
+    }
+  };
+  
+  radioSend.addEventListener("click", validarRadio);
+  */
 
 formulario.addEventListener("submit", validar);
