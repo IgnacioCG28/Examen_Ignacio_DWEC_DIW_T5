@@ -17,4 +17,13 @@ let mensajesErrores = [];
 
 
 
+const validar = (event) => {
+    event.preventDefault();
+    mensajesErrores = [];
+      //Nombre
+    nombre.value.trim().length === 0 && mensajesErrores.push("El nombre es un campo obligatorio");
+    nombre.value !== 
+    }
   
+  
+  formulario.addEventListener("submit", validar);
