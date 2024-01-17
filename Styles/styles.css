@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("/Assets/fonts/Montserrat-Regular.ttf");
+  }
+  :root {
+    --input-size: 20.75rem;
+    --height-hero-image: 90vh;
+  }
+  
+  html {
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #2f2f2f;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-container-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-container {
+    background: url(/assets/img/air.jpg) center/cover;
+    height: var(--height-hero-image);
+    position: relative;
+  }
+  
+  .hero-container::before {
+    content: "";
+    background: #000000;
+    position: absolute;
+    width: 500rem;
+    height: 100%;
+    opacity: 0.7;
+  }
+  
+  .hero-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  h1 {
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .colorW {
+    color: red;
+  }
+  
+  span {
+    color: white;
+  }
+
+  /*Animation h1*/
+
+  h1 {
+    animation: colorr-change 2s infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: white;
+    }
+    50% {
+      color: gold;
+    }
+    100% {
+      color: white;
+    }
+  }
+
+  /*Form Style*/
+  form{
+    
+  }
